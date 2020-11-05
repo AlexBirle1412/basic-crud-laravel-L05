@@ -14,10 +14,11 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
 
-            <form method="PATCH" action="{{ url('/products/<?php echo $prod->id; ?>') }}">
+            <form method="POST" action="/products/{{$prod->id}}">
 
                 <!-- "{{config('app.url')}}/products">  -->
                 @csrf
+                @method('PATCH')
                 <h1>Modify this product</h1>
 
                 <div class="form-input">
