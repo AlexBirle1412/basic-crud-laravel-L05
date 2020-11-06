@@ -41,7 +41,6 @@
 
                         <form method="POST" action="/products/{{$product->id}}">
 
-
                             @csrf
                             @method('DELETE')
 
